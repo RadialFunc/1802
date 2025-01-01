@@ -221,7 +221,7 @@ Again $x y$-coordinates are either infeasible or at least annoying.
 
 #sample[
   The unit circle centered at $(0,0)$ is divided into four quarters by the $x$ and $y$ axes.
-  Find the center of mass of the quarter-circle in the first quadrant,
+  Compute the center of mass of the quarter-circle in the first quadrant,
   assuming a uniform density distribution.
 ]
 #soln[
@@ -357,7 +357,7 @@ One draws red arrows $bf(T)(u, v)$ to $bf(T)(u + dif u, v)$ and $bf(T)(u, v + di
 for "small" changes $dif u$ and $dif v$.
 These vectors will correspond approximately to the two vectors
 $ bf(v)_1 = bf(T)(u + dif u, v) - bf(T)(u,v) approx partial / (partial u) bf(T)
-  = (partial p)/(partial u) ee_1 + (partial p)/(partial u) ee_2 $
+  = (partial p)/(partial u) ee_1 + (partial q)/(partial u) ee_2 $
 and
 $ bf(v)_2 = bf(T)(u, v + dif v) - bf(T)(u,v) approx partial / (partial v) bf(T)
   = (partial p)/(partial v) ee_1 + (partial q)/(partial v) ee_2. $

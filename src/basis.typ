@@ -197,14 +197,14 @@ Without "slope", you cannot notice these dependences by sight for $n >= 3$, so u
   Is $vec(13, 37)$, $vec(42, 88)$ a basis for $RR^2$?
 ]
 #soln[
-  Yes because $detmat(13, 37; 42, 88) = 13 dot 88 - 37 dot 42 != 0$.
+  Yes, because $detmat(13, 37; 42, 88) = 13 dot 88 - 37 dot 42 != 0$.
 ]
 
 #sample[
   Is $bf(v)_1 = vec(1,3,4)$, $bf(v)_2 = vec(10,1,11)$, $bf(v)_3 = vec(-9,10,1)$ a basis for $RR^3$?
 ]
 #soln[
-  No because
+  No, because
   $ detmat(1, 3, 4; 10, 1, 11; -9, 10, 1)
     &= 1 detmat(1, 11; 10, 1) - 3 detmat(10, 11; -9, 1) + 4 detmat(10, 1; -9, 10) \
     &= 1(10-11) - 3(10+99) + 4(100+9) = 0. #qedhere $
@@ -213,7 +213,7 @@ Without "slope", you cannot notice these dependences by sight for $n >= 3$, so u
   Is $vec(3,42,18)$, $vec(1,53,17)$, $vec(71,91,13)$ a basis for $RR^3$?
 ]
 #soln[
-  No because
+  Yes, because
   $ detmat(3,1,71; 42,53,91; 18,17,13) = "ugly arithmetic" = -18522 != 0. #qedhere $
 ]
 
@@ -580,13 +580,13 @@ Examples of what I mean when I say "tell by looking" for $n=2$:
   For example, if your birthday was May 17, 1994
   you would take $bf(v)_1 = vec(5, 17)$ and $bf(v)_2 = vec(19, 94)$.
 
-  - Determine the span of those two vectors in $RR^2$.
+  - Compute the span of those two vectors in $RR^2$.
   - Find a current or former K-pop idol who gets a different answer from you
     when they use their birthday.
 ] <exer-basis-birthday>
 
 #exer[
   In $RR^5$, consider the vector $bf(v) = angle.l 1,2,3,4,5 angle.r$.
-  What's the maximum number of linearly independent vectors one can find
-  which are all perpendicular to $bf(v)$?
+  Compute the maximum possible number of linearly independent vectors one can find
+  which are all perpendicular to $bf(v)$.
 ]

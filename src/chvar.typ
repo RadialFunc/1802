@@ -130,7 +130,7 @@ the 18.02 is the grown-up version where you have a transition map instead.
   The *Jacobian matrix* is the matrix
   whose rows are the gradients of each component written as row vectors;
   the *Jacobian determinant* is its determinant.
-  In these notes we denote the matrix my $J_(bf(T))$
+  In these notes we denote the matrix by $J_(bf(T))$
   (and the determinant by $det J_(bf(T))$.
 ]
 
@@ -214,7 +214,7 @@ In 18.02, the derivative from 18.01 is replaced by the enormous Jacobian determi
 Let's see an example of how to carry out this integration.
 
 #sample[
-  Find the area of the region $cal(R)$ bounded by the curves
+  Compute the area of the region $cal(R)$ bounded by the curves
   $ x y = 16/9, #h(1em) x y = 16/25, #h(1em) x = 4 y, #h(1em) y = 4 x. $
 ]
 #soln[
@@ -224,7 +224,7 @@ Let's see an example of how to carry out this integration.
   We made a transition map $bf(T) : cal(R)_"new" -> cal(R)$ written as either
   $ bf(T)(u,v) &= (sqrt(v/u), sqrt(u v)) \
     bf(T)^(-1)(x,y) &= (y/x, x y). $
-  We don't like square roots, so we'll the determinant of the Jacobian matrix for $bf(T)^(-1)$, which is
+  We don't like square roots, so we'll use the determinant of the Jacobian matrix for $bf(T)^(-1)$, which is
   $ det (J_(bf(T)^(-1))) = detmat(-y/x^2, 1/x; y, x)
     = (- y / x^2) dot x - 1 / x dot y = - y / x - y / x = - (2 y) / (x) . $
   Since we used the upside-down version of the formula, we need to translate
